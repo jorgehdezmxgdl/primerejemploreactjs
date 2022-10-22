@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Juego de Topos</title>
+        <meta charset="UTF-8">   
+        <script src="logica.js"></script>
+    </head>
+    <body>
+        <h1>Juego de Topos</h1>
+        <h3>Haz click en el botón de Iniciar y cuando aparezca
+            un topo deberas de seleccionarlo con el mouse, 
+            ganar 1 punto </h3>
+        <div align="center">
+           <p>Puntaje <span style="color:blue" id="puntaje">0</span></p> 
+           <button onclick="inicia()"><span id="btnmensaje">Iniciar</span></button>
+        </div>    
+        <img src="topo.png" onclick="sumapuntaje(1)" style="position:absolute;visibility:hidden;" id="topo1" width="50px" height="50px" alt="topo" />
+        <img src="topo.png" onclick="sumapuntaje(2)" style="position:absolute;visibility:hidden;" id="topo2" width="50px" height="50px" alt="topo" />
+        <img src="topo.png" onclick="sumapuntaje(3)" style="position:absolute;visibility:hidden;" id="topo3" width="50px" height="50px" alt="topo" />    
+    </body>
+</html>
